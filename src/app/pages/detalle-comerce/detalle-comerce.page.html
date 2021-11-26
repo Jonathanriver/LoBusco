@@ -1,0 +1,133 @@
+<ion-header style="--box-shadow: none !important;" class="ion-no-border">
+    <ion-toolbar style="--background: #E8320F !important;border-radius: -25px;--box-shadow: none !important;">
+        <ion-buttons slot="start" style="color: white;">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title style="font-family: 'Berlin_Sans';margin-left: 90px;color: white;">LoBusco</ion-title>
+        <ion-icon slot="end" name="search-outline" style="transform: rotate(90deg) !important;font-size: 20px;margin-right: 12px;color: white;"></ion-icon>
+
+    </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+    <div class="ImagenComerce" [ngStyle]="{ 'background-image' : UrlImag}">
+
+    </div>
+    <ion-item lines="none" style="border-radius: 62px;--background: transparent;">
+        <ion-card style="width: 100%;">
+            <ion-card-header>
+                <ion-card-title class="ion-text-center" style="vertical-align: middle;font-family: 'Berlin_Sans';color: #E8320F;font-weight: bold;">
+                    <ion-icon name="star" style="color: rgb(253, 218, 21);font-size: 25px;border: sold 0.5px rgb(253, 218, 21);">
+                    </ion-icon> <span style="font-size: 30px;">Danny Broaster</span>
+                </ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+                <p class="ion-text-justify">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                    ea commodo consequat.
+                </p>
+                <br>
+                <div class="ion-text-left">
+                    <p class="Subtitulo">Galería</p>
+                </div>
+                <div class="" style="width: 100%;overflow: auto;">
+                    <ion-slides [options]="slideOpts" style="height: 40%;">
+                        <ion-slide>
+                            <ion-grid>
+                                <ion-row>
+                                    <ion-col size="6">
+                                        <img [src]="imagSrc" style="width: 100px !important; height: 100px !important;">
+                                    </ion-col>
+                                    <ion-col size="6" class="ion-text-left">
+                                        <p style="color: #E8320F;font-family: 'Berlin_Sans';">{{TituloCombo}}</p>
+                                        <p>{{ Precio|currency}}</p>
+                                        <p>
+                                            <ion-icon name="star" style="color: yellow;"></ion-icon>
+                                        </p>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-grid>
+                        </ion-slide>
+                        <ion-slide>
+                            <ion-grid>
+                                <ion-row>
+                                    <ion-col size="6">
+                                        <img src="../../../assets/Imagenes/Menu1.png" style="width: 100px !important; height: 100px !important;">
+                                    </ion-col>
+                                    <ion-col size="6" class="ion-text-left">
+                                        <p style="color: #E8320F;font-family: 'Berlin_Sans';">Combo 2</p>
+                                        <p>$45.000</p>
+                                        <p>
+                                            <ion-icon name="star" style="color: yellow;"></ion-icon>
+                                        </p>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-grid>
+                        </ion-slide>
+                        <ion-slide>
+                            <ion-grid>
+                                <ion-row>
+                                    <ion-col size="6">
+                                        <img src="../../../assets/Imagenes/Menu1.png" style="width: 100px !important; height: 100px !important;">
+                                    </ion-col>
+                                    <ion-col size="6" class="ion-text-left">
+                                        <p style="color: #E8320F;font-family: 'Berlin_Sans';">Combo 3</p>
+                                        <p>$45.000</p>
+                                        <p>
+                                            <ion-icon name="star" style="color: yellow;"></ion-icon>
+                                        </p>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-grid>
+                        </ion-slide>
+                    </ion-slides>
+                </div>
+                <div class="ion-text-left">
+                    <p class="Subtitulo">Contacto</p>
+                </div>
+                <div class="ion-text-center">
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col>
+                                <ion-icon name="call" style="color: #E8320F;border: solid 0.5px #E8320F;border-radius: 50px;font-size: 25px;padding: 12px;">
+                                </ion-icon>
+                            </ion-col>
+                            <ion-col>
+                                <ion-icon name="logo-whatsapp" style="color: #E8320F;border: solid 0.5px #E8320F;border-radius: 50px;font-size: 25px;padding: 12px;">
+                                </ion-icon>
+                            </ion-col>
+                            <ion-col>
+                                <ion-icon name="logo-facebook" style="color: #E8320F;border: solid 0.5px #E8320F;border-radius: 50px;font-size: 25px;padding: 12px;">
+                                </ion-icon>
+                            </ion-col>
+                            <ion-col>
+                                <ion-icon name="logo-instagram" style="color: #E8320F;border: solid 0.5px #E8320F;border-radius: 50px;font-size: 25px;padding: 12px;">
+                                </ion-icon>
+                            </ion-col>
+                            <ion-col>
+                                <ion-icon name="map" style="color: #E8320F;border: solid 0.5px #E8320F;border-radius: 50px;font-size: 25px;padding: 12px;">
+                                </ion-icon>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+                <div class="ion-text-left">
+                    <p class="Subtitulo">Califícanos</p>
+                </div>
+                <div class="ion-text-left">
+                    <ion-icon name="star" style="color: rgb(253, 218, 21); font-size: 30px;"></ion-icon>
+                    <ion-icon name="star" style="color: rgb(253, 218, 21); font-size: 30px;"></ion-icon>
+                    <ion-icon name="star" style="color: rgb(253, 218, 21); font-size: 30px;"></ion-icon>
+                    <ion-icon name="star" style="color: rgb(253, 218, 21); font-size: 30px;"></ion-icon>
+                    <ion-icon name="star" style="color: rgb(253, 218, 21); font-size: 30px;"></ion-icon>
+                </div>
+                <br>
+                <div class="ion-text-center">
+                    <ion-button style="--background: #E8320F;width: 100%; height: 40px;" shape="round">!Pidelo Ya¡</ion-button>
+                </div>
+                <br>
+            </ion-card-content>
+        </ion-card>
+    </ion-item>
+</ion-content>

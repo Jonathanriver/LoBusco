@@ -1,0 +1,7 @@
+{
+  "name": "LoBusco",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

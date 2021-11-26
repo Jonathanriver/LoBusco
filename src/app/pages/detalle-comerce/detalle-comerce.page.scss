@@ -1,0 +1,49 @@
+ion-header {
+    border: 0px !important;
+    border-bottom-color: transparent !important;
+    background-image: none !important;
+    border-bottom: none !important;
+}
+
+.tarjeta {
+    // background: url('../../../assets/Imagenes/TARJETA\ PRODUCTOS\ HOME.png');
+    background-size: cover;
+    background-position: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.ImagenComerce {
+    background-image: url('../../../assets/Imagenes/comerce1.png');
+    height: 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Subtitulo {
+    color: #E8320F;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Berlin_Sans';
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
